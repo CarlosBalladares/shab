@@ -1,0 +1,151 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <!-- Compiled and minified CSS -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <!-- Compiled and minified JavaScript -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5UOyC7GYZhe5qfkDF0SILIT62-XBPh_g&libraries=places"></script>
+
+      <style>
+      img.brand-logo {
+
+          position:relative;
+          top:1px;
+          width: 120px;
+      }
+
+      .navbar-fixed{
+      }
+      .slider{
+
+        min-height:100vh;
+      }
+
+      .slider ul li{
+        min-height:100vh;
+
+      }
+
+      .tealr{
+        background-image: url("img/illidarnk.jpeg");
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: cover;
+      }
+
+      .logo {
+    display: inline-block;
+    height: 100%;
+    }
+
+    .logo>img {
+        vertical-align: middle
+    }
+
+
+      </style>
+    </head>
+
+    <body>
+      <div class="navbar" >
+        <nav class="black z-depth-0">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#" ><img src="img/shab-logo4.png" class="brand-logo logo"></a>
+              <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+                <ul class="right hide-on-med-and-down">
+                  <li>
+                    <a href="#explora">Explora</a>
+                  </li>
+                  <li>
+                    <a href="#nosotros">Acerca de Nosotros</a>
+                  </li>
+                  <li>
+                    <a href="#popular">Registrate</a>
+                  </li>
+
+                </ul>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <ul class="sidenav" id="mobile-nav">
+        <li>
+          <a href="#explora">Explora</a>
+        </li>
+        <li>
+          <a href="#nosotros">Acerca de Nosotros</a>
+        </li>
+        <li>
+          <a href="#popular">Registrate</a>
+        </li>
+
+      </ul>
+
+      <!--Section slider-->
+.
+
+      <div class="slider">
+
+          <ul class="slides">
+            <li>
+              <img src="img/bg1dark.jpg"> <!-- random image -->
+              <div class="caption left-align">
+                <h3>La aventura</h3>
+                <h5 class="light grey-text text-lighten-3">Una nueva manera de explorar. Encuentra tu proximo destino otros usuarios. Con un par de clicks accede a tours unicos.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="img/bg2dark.jpg"> <!-- random image -->
+              <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+
+            <li>
+              <img src="img/bg3dark.jpg"> <!-- random image -->
+              <div class="caption right-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+      <script>
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+
+        // Material Boxed
+        const mb = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(mb, {});
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.slider');
+          var instances = M.Slider.init(elems, {
+            indicators: false,
+            transition:500,
+            interval:6000
+          });
+        });
+      </script>
+    </body>
+  </html>
